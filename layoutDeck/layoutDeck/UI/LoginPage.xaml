@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="layoutDeck.UI.LoginPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#88bdbc">
+            <!-- Logo here -->
+            <StackLayout Margin="100, 200, 100, 0" BackgroundColor="LightGray" HeightRequest="250">
+                <Label Text="Logo" FontSize="24" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <!-- Buttons -->
+            <StackLayout Margin="100, 100, 100, 0">
+                <StackLayout Orientation="Horizontal">
+                    <Label BackgroundColor="Gray" WidthRequest="40"/>
+                    <Entry Placeholder="E-mail" HorizontalOptions="FillAndExpand" x:Name="entryEmail"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label BackgroundColor="Gray" WidthRequest="40"/>
+                    <Entry Placeholder="Password" HorizontalOptions="FillAndExpand" x:Name="entryPassword"/>
+                </StackLayout>
+
+                <Button WidthRequest="150" HeightRequest="40" BorderRadius="20" Text="Sign in"
+                    Clicked="Button_Clicked_SignIn"/>
+
+                <Label Text="Don't have an account?" FontSize="12" HorizontalOptions="Center"/>
+                <Button WidthRequest="100" HeightRequest="30" BorderRadius="10" Text="Create account" 
+                    FontSize="11" BackgroundColor="GhostWhite" HorizontalOptions="Center"
+                    Clicked="Button_Clicked_CreateAccount"/>
+                <Button WidthRequest="100" HeightRequest="30" BorderRadius="10" Text="Create account" 
+                    FontSize="11" BackgroundColor="GhostWhite" HorizontalOptions="Center"
+                    Clicked="Button_Clicked_MakeUsers"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
